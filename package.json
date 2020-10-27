@@ -1,0 +1,20 @@
+{
+  "name": "def-props-to-def-args",
+  "version": "0.1",
+  "description": "Updates your functional React components to use ES6 default props where they have been using default props",
+  "main": "def-props-to-def-args.js",
+  "repository": "https://github.com/frainho/defPropsToDefArgs.git",
+  "author": "Filipe Rainho <filipenrainho@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "jscodeshift": "^0.11.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.1"
+  },
+  "scripts": {
+    "transform": "jscodeshift -t ./index.js",
+    "test": "jest"
+  }
+}
